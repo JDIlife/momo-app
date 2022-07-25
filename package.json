@@ -1,0 +1,24 @@
+{
+  "name": "momo-app",
+  "version": "1.0.0",
+  "description": "simple memo app",
+  "main": "main.js",
+  "scripts": {
+    "test": "test start",
+		"start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baro-baro/momo-app.git"
+  },
+  "author": "baro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baro-baro/momo-app/issues"
+  },
+  "homepage": "https://github.com/baro-baro/momo-app#readme",
+  "devDependencies": {
+    "electron": "^19.0.9",
+    "electron-reloader": "^1.2.3"
+  }
+}

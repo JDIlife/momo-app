@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="style.css">
+	<script defer src="render.js"></script>
+	<title>MOMO</title>
+</head>
+<body>
+		<header>
+		<div id="logo">MOMO</div>
+	</header>
+	<nav>
+		<div id="menuArea">
+			<div class="menuItems">
+				<div class="buttons1">
+					<ul>
+						<li><button id="newFolderBtn"><i class="fa-solid fa-circle-plus"></i></button></li>
+						<li><button id="settingBtn"><i class="fa-solid fa-gear"></i></button></li>
+					</ul>
+				</div>
+				<div class="buttons2">
+					<ul>
+						<li><button id="selectBtn"><i class="fa-regular fa-circle-check"></i></button></li>
+						<li><button id="trashBinBtn"><i class="fa-solid fa-trash-can"></i></button></li>
+					</ul>
+				</div>
+				<div class="buttons3">
+					<ul>
+						<li><button id="editNoteBtn"><i class="fa-solid fa-pen-to-square"></i></button></li>
+						<li><button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+					</ul>
+				</div>
+			</div>
+			<section class="menuContents">
+				<div class="settingContent">
+					<ul>
+						<li>
+							Dark Theme<button id="darkThemeBtn"><i class="fa-solid fa-toggle-off"></i></button>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</nav>
+	<main>
+		<div id="folderArea">
+			<div id="newFolder">
+			</div>
+			<div id="folderItems">
+			</div>
+			</div>
+		</div>
+		<div id="listArea">
+			<div id="listItems">
+			</div>
+		</div>
+		<div id="textArea">
+			<div class="textId">
+				<div id="autoDateTime"></div>
+				<input type="noteTitle" id="noteTitle" placeholder="note title">
+				<textarea name="" id="mainNote" cols="30" rows="25" placeholder="main note"></textarea>
+				<button type="submit" id="submitBtn"><i class="fa-solid fa-circle-arrow-right"></i></button>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div id="madeBy">made by BARO</div>
+	</footer>
+</body>
+</html>

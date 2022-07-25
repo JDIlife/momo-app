@@ -1,0 +1,300 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--main-bg-color: #b3dfea;
+	--main-area-color: #d1f4fa;
+	--main-menuContent-color: #a4abdb;
+	--main-menuButton-color: #000000;
+	--main-text-color: #000000;
+}
+
+[data-theme="dark"] {
+	--main-bg-color: #303030;
+	--main-area-color: #2D272D;
+	--main-menuContent-color: #696a70;
+	--main-menuButton-color: #6A84A1;
+	--main-text-color: #cccbca;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: var(--main-bg-color);
+}
+
+#logo {
+	margin-top: 5px;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 25px;
+	font-weight: 800;
+	color: var(--main-text-color);
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: var(--main-menuButton-color);
+}
+
+ul {
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+.menuItems {
+	display: flex;
+	width: 100%;
+}
+
+.buttons1 {
+	width: 15%;
+	margin: 0px 30px 0px 30px;
+}
+
+.buttons2 {
+	width: 20%;
+	margin: 0px 30px 0px 30px;
+}
+
+.buttons3 {
+	width: 65%;
+	margin: 0px 30px 0px 30px;
+}
+
+.menuItems ul {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.menuItems ul button {
+	margin: 0px 10px 0px 10px;
+	padding: 0;
+	font-size: 30px;
+}
+
+#searchButton {
+	margin: 0px 10px 0px 10px;
+	padding: 0;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 30px;
+}
+
+.menuContents {
+	display: flex;
+}
+
+.settingContent {
+	width: 150px;
+	height: 180px;
+	border-radius: 15px;
+	background-color: var(--main-menuContent-color);
+	position: absolute;
+	left: 9%;
+	text-align: center;
+	display: none;
+}
+
+.settingContent ul li {
+	margin: 5px;
+}
+
+.settingContent ul li i {
+	font-size: 20px;
+	margin: 5px;
+}
+
+.fontContent {
+	width: 150px;
+	height: 180px;
+	border-radius: 15px;
+	background-color: var(--main-menuContent-color);
+	position: absolute;
+	left: 51%;
+	display: none;
+}
+
+#fontStyle {
+	display: flex;
+	justify-content:space-around;
+}
+
+#textStyle li {
+	margin-left: 10px;
+}
+
+#textStyle li button {
+	font-size: 15px;
+}
+
+.shareContent {
+	width: 150px;
+	height: 180px;
+	border-radius: 15px;
+	background-color: var(--main-menuContent-color);
+	position: absolute;
+	right: 12%;
+	display: none;
+}
+
+.shareContent ul li button {
+	font-size: 20px;
+	margin: 10px;
+}
+
+.shareContent ul li i {
+	margin-left: 10px;
+}
+
+main {
+	display: flex;
+	height: 85vh;
+}
+
+
+#folderArea {
+	margin: 30px;
+	background-color:var(--main-area-color);
+	width: 15%;
+	border-radius: 15px;
+	overflow-y: hidden;
+}
+
+#newFolder {
+	margin: 15px;
+	color: var(--main-text-color);
+	height: 5%;
+}
+
+#folderItems div {
+	margin: 15px;
+	color: var(--main-text-color);
+}
+
+.folderItem {
+	display: flex;
+	align-items: center;
+}
+
+.folderItem i {
+	margin-right: 10px;
+}
+
+.folderItem input {
+	background-color: var(--main-area-color);
+	border: none;
+	width: 60%;
+	font-size: 15px;
+	color: var(--main-text-color);
+}
+
+.folderItem input:focus {
+	outline: none;
+	background-color: var(--main-bg-color);
+}
+
+.folderName {
+	color: var(--main-text-color);
+}
+
+.folderItem .numberOfNotes {
+	display: flex;
+	font-size: 13px;
+	background-color: var(--main-bg-color);
+	width: 15%;
+	border-radius: 50px;
+	justify-content: center;
+}
+
+#listArea {
+	margin: 30px;
+	background-color:var(--main-area-color);
+	width: 20%;
+	border-radius: 15px;
+	color: var(--main-text-color);
+}
+
+.listItem {
+	margin: 10px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid gray;
+}
+
+.listItem .title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.listItem .editDate {
+	font-size: 15px;
+	padding-right: 10px;
+}
+
+#autoDateTime {
+	text-align: center;
+	font-size: 16px;
+	color: var(--main-text-color);
+}
+
+#noteTitle {
+	font-size: 30px;
+	width: 100%;
+	background-color: var(--main-area-color);
+	border-style: none;
+	color: var(--main-text-color);
+}
+
+#noteTitle:focus {
+	outline: none;
+}
+
+
+#textArea {
+	margin: 30px;
+	background-color:var(--main-area-color);
+	width: 65%;
+	border-radius: 15px;
+}
+
+#mainNote {
+	height: 100%;
+	width: 100%;
+	font-size: 20px;
+	background-color: var(--main-area-color);
+	border: none;
+	resize: none;
+	color: var(--main-text-color);
+}
+
+#mainNote:focus {
+	outline: none;
+}
+
+#submitBtn {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 5%;
+	bottom: 7%;
+}
+
+#submitBtn i {
+	font-size: 30px;
+}
+
+
+footer {
+	text-align: center;
+	color: var(--main-text-color);
+}
