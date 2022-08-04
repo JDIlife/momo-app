@@ -1,5 +1,9 @@
-*/node_modulesa/*
+*/node_modules/*
 
 .LICENSE-MIT
 
 .package-lock.json
+
+/dist/
+
+

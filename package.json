@@ -5,8 +5,19 @@
   "main": "main.js",
   "scripts": {
     "test": "test start",
-		"start": "electron ."
+    "start": "electron .",
+		"build:win-x64": "electron-builder --win --x64"
   },
+	"build": {
+		"productName": "MOMO",
+		"asar": true,
+		"win": {
+			"target": "nsis"
+		},
+		"nsis": {
+			"oneClick": true
+		}
+	},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/baro-baro/momo-app.git"
@@ -19,6 +30,11 @@
   "homepage": "https://github.com/baro-baro/momo-app#readme",
   "devDependencies": {
     "electron": "^19.0.9",
+    "electron-builder": "^23.3.3",
+    "electron-rebuild": "^3.2.8",
     "electron-reloader": "^1.2.3"
+  },
+  "dependencies": {
+    "better-sqlite3": "^7.6.2"
   }
 }
